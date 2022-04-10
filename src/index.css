@@ -1,13 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Poppins', sans-serif;
+}
+
+.movieContainer{
+  /* border: 2px solid red; */
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: rgb(20, 20, 66);
+}
+
+.movieCard{
+  margin: 20px 5px;
+  width: 300px;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(27, 27, 75);
+  border-radius: 20px;
+  color: whitesmoke;
+  transition: transform .2s;
+}
+
+.movieCard:hover{
+  box-shadow: 0px 0px 40px rgb(7, 7, 36);
+  transform: scale(1.02);
+  
+}
+
+.movieImage{
+  width: 280px;
+  border-radius: 15px;
+}
+
+.movieInfo{
+  text-align: center;
+  margin: 10px;
+}
+
+.movieInfo span{
+  font-weight: 200;
+}
+
+.movieInfo h3{
+  font-weight: 500;
+}
+
+.movieInfo h3{
+  margin: 0px
+}
+
+.movieCollection h3{
+  font-weight: 200;
+}
+
+.movieHeader{
+  text-align: center;
+  color: whitesmoke;
+  padding: 10px 30px;
+  background-color: rgb(27, 27, 75);
+}
+
+.movieHeader h1{
+  font-weight: 200;
 }
